@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一个记录学习、创作和成长的个人网站。">
+  <title>我的个人空间 · 学习与创造</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="返回首页"><span class="logo-mark">M.</span> 我的空间</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="打开导航菜单">菜单 <span>☰</span></button>
+    <nav id="navigation" aria-label="主导航">
+      <a href="#home" class="active">首页</a><a href="#about">关于我</a><a href="#projects">作品展示</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> 保持好奇，持续学习</p>
+        <h1>你好，<br>欢迎来到<br><span>我的小小宇宙。</span></h1>
+        <p class="intro">我是一个正在探索编程世界的学习者。<br>用代码表达想法，把一点点好奇，变成看得见的作品。</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">看看我的作品 <span>↗</span></a><a class="text-link" href="#about">认识一下我 <span>→</span></a></div>
+        <p class="hero-note">每一个大想法，都从一个小小的开始出发。</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="抽象的轨道、星球和代码卡片，象征探索与创造">
+        <span class="art-label">A LITTLE SPACE FOR BIG IDEAS</span>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="planet"></div><span class="star star-one">✳</span><span class="star star-two">✦</span>
+        <div class="code-card"><div class="card-dots"><i></i><i></i><i></i></div><p><span>const</span> life = {<br>&nbsp; curiosity: <em>"无限"</em>,<br>&nbsp; learning: <b>true</b>,<br>&nbsp; nextStep: <em>"开始创造"</em><br>};</p></div>
+        <span class="art-caption">EXPLORE / LEARN / CREATE</span>
+      </div>
+    </section>
+    <section id="about" class="section about">
+      <div class="section-heading"><p class="eyebrow">01 / ABOUT ME</p><h2>一点关于我的故事<span>。</span></h2></div>
+      <div class="about-grid"><div><p class="large-copy">从第一次写下 <code>Hello, World!</code> 开始，<br>我发现，创造其实离我们很近。</p><p class="muted">我正在学习用 HTML 搭建页面、用 CSS 设计界面、用 JavaScript 添加互动。我喜欢简单而有温度的设计，也享受解决一个小问题时的成就感。</p><p class="muted">这个网站是我的学习起点。未来，我会在这里分享自己的项目、灵感和成长记录。</p></div><aside class="learning-card"><span class="small-label">我的学习工具箱</span><h3>每天进步一点点</h3><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git & GitHub</span></div><p>🌱 正在学习 · 持续更新中</p></aside></div>
+    </section>
+    <section id="projects" class="section projects">
+      <div class="projects-heading"><div class="section-heading"><p class="eyebrow">02 / SELECTED WORK</p><h2>从想法，到作品<span>。</span></h2></div><p class="muted">小小的尝试，也值得被记录。</p></div>
+      <div class="filters" role="group" aria-label="筛选作品"><button class="selected" data-filter="all" aria-pressed="true">全部</button><button data-filter="web" aria-pressed="false">网页设计</button><button data-filter="practice" aria-pressed="false">学习计划</button></div>
+      <div class="project-grid">
+        <article class="project-card" data-category="web"><div class="project-visual visual-site" aria-hidden="true"><div class="mini-browser"><div class="mini-bar">● ● ●</div><div class="mini-content"><span>HELLO, WORLD.</span><strong>我的第一个<br>个人网站。</strong><i></i></div></div><span class="visual-number">01</span></div><div class="project-info"><span class="small-label">网页设计 / 已完成</span><h3>我的个人空间 <span>↗</span></h3><p>用原生 HTML、CSS 和 JavaScript，记录我的编程之旅。</p><a class="project-link" href="#home">浏览当前网站 <span>→</span></a></div></article>
+        <article class="project-card" data-category="practice"><div class="project-visual visual-notes" aria-hidden="true"><div class="note-sheet"><span>LEARNING NOTES</span><strong>今天也有<br>新的发现。</strong><div></div><div></div><div></div></div><span class="visual-number">02</span></div><div class="project-info"><span class="small-label">学习计划 / 尚未开始</span><h3>编程学习手记</h3><p>计划整理学习笔记，用自己的语言解释每一个新知识。</p><span class="coming-soon">未来作品 · 敬请期待</span></div></article>
+        <article class="project-card" data-category="practice"><div class="project-visual visual-tool" aria-hidden="true"><div class="tool-card"><span>✦</span><strong>让日常，<br>简单一点。</strong><div>+ 一个新的小想法</div></div><span class="visual-number">03</span></div><div class="project-info"><span class="small-label">学习计划 / 尚未开始</span><h3>日常实用小工具</h3><p>计划尝试待办清单与计时器，让代码解决生活里的小问题。</p><span class="coming-soon">未来作品 · 敬请期待</span></div></article>
+      </div><p id="filter-status" class="sr-only" aria-live="polite">显示全部 3 个作品</p>
+    </section>
+    <section class="closing section"><span>✳</span><h2>故事才刚刚开始。</h2><p>感谢你来访，期待下一次带着新作品与你见面。</p><a class="text-link" href="#home">回到顶部 ↑</a></section>
+  </main>
+  <footer><a class="logo" href="#home"><span class="logo-mark">M.</span> 我的空间</a><p>© <span id="year">2026</span> 我的个人网站 · 用好奇心与代码制作</p><span>保持热爱，慢慢成长。</span></footer>
+</body>
+</html>
